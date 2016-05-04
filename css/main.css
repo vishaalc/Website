@@ -25,7 +25,7 @@ body {
 */
 
 #header {
-	background-image: url(images/pano.png);
+	background-image: url(images/pano.PNG);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: 30% 20%;
