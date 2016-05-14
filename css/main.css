@@ -1,6 +1,6 @@
 html {
 	min-width: 1280px;
-	height: 900px;
+	min-height: 900px;
 }
 
 body {
