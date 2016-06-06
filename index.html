@@ -1,3 +1,4 @@
+
 <html> 
 
 <!-- TAGS 
@@ -6,14 +7,12 @@
 	<meta charset = "UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> Vishaal </title>
-	<link rel = "stylesheet" href = "main.css"/>
+	<link rel = "stylesheet" href = "css/main.css"/>
 	<script type = "text/javascript" src = "jquery.js"></script>
 
 	<!-- LOADER
-
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
-
 	<script type = "javascript">
 		//paste this code under head tag or in a seperate js file.
 		// Wait for window load
@@ -22,7 +21,6 @@
 			$(".se-pre-con").fadeOut("slow");;
 		});
 	</script>
-
 	-->
 
 	<link rel="shortcut icon" href="images/favicon.ico" >
@@ -77,7 +75,7 @@
 
 		<div class = "container3">
 			<h3> And I'm also a self-proclaimed "fun guy". </h3>
-			With another part of my keen mind, I'm a passionate writer and a huge music enthusiast, not to mention my affinity for "chilling" with friends. I dabble in a bunch of things that interest me - including videography, cooking, barbering, drawing, as well as writing raps. I avidly follow basketball, I swim, and I'm also into fashion and watching comedic Youtubers in my spare time. Oh, and I'm also a DC Comics fan. I love interacting with people, so feel free to get in touch below! </br>
+			With another part of my keen mind, I'm a passionate writer and a huge music enthusiast, not to mention my affinity for "chilling" with friends. I dabble in a bunch of things that interest me - including videography, cooking, barbering, drawing, as well as writing and producing beats. I avidly follow basketball, I swim, and I'm also into fashion and watching comedic Youtubers in my spare time. Oh, and I'm also a DC Comics fan. I love interacting with people, so feel free to get in touch below! </br>
 		</div>
 
 	</div>
@@ -86,27 +84,20 @@
 	======================================================================  -->
 
 	<script type = "text/javascript">
-
 		$(window).scroll(function(){
-
 			$("#aboutsection").each(function(i) {
 				var bottom_of_section = $(this).position().top + $(this).outerHeight();
 				var bottom_of_window = $(window).scrollTop() + $(window).height(); 
-
 				bottom_of_window = bottom_of_window + 150;
-
 				if (bottom_of_window > bottom_of_section) {
 					$(this).animate({"opacity":"1"}, 500);
 				}
 			});
-
 			var pos = $(window).scrollTop();
 			$(".container1").css({"opacity":(1000 - pos)/100});
 			$(".container2").css({"opacity":(1150 - pos)/100});
 			$(".container3").css({"opacity":(1300 - pos)/100});
-
 		});
-
 	</script>
 
 	<!-- RESUME SECTION
@@ -142,7 +133,7 @@
 					<li> Python </li>
 					<li> C++ </li>
 					<li> HTML, CSS, JavaScript </li>
-					<li> php </li>
+					<li> PHP </li>
 					<li> SQL </li>
 				</ul>
 			</div>
@@ -175,7 +166,6 @@
 	======================================================================  -->
 
 		<script type = "text/javascript">
-
 			$(function() {
 				$("#preview").hover(function() {
 					$("#direct").fadeIn(100);
@@ -188,29 +178,22 @@
 					// $("#thumbnail").animate({width: 380, height: 250}, 100);
 				});
 			});
-
 		</script>
 
 		<script type = "text/javascript">
-
 			$(window).scroll(function(){
-
 				$("#resumesection").each(function(i) {
 				var bottom_of_section = $(this).position().top + $(this).outerHeight();
 				var bottom_of_window = $(window).scrollTop() + $(window).height(); 
-
 				bottom_of_window = bottom_of_window + 150;
-
 				if (bottom_of_window > bottom_of_section) {
 					$(this).animate({"opacity":"1"}, 500);
 				}
 			});
-
 			var pos = $(window).scrollTop();
 			$("#preview").css({"opacity":(2000 - pos)/100});
 			$(".skills").css({"opacity":(2000 - pos)/100});
 			$("#description").css({"opacity":(2000 - pos)/100});
-
 			});
 		</script>
 
@@ -235,7 +218,6 @@
 		</div>
 
 		<!--
-
 		<script type = "text/javascript">
 			var frmvalidator  = new Validator("contactform");
 			frmvalidator.addValidation("name","req","Please provide your name");
@@ -243,7 +225,6 @@
 			frmvalidator.addValidation("email","email",
   				"Please enter a valid email address");
 		</script>
-
 		-->
 
 		<div id = "profiles">
@@ -252,7 +233,7 @@
 				<a target = "_blank" href = "https://www.facebook.com/vishaal.chittur" title = "Facebook"><img src = "images/facebook.png" class = "icon" width = "50" height = "50" alt = "Facebook"/></a>
 				<a target = "_blank" href = "https://www.linkedin.com/in/vschittur"  title = "LinkedIn"><img src = "images/linkedin.png" class = "icon" width = "50" height = "50" alt = "LinkedIn"/></a>
 				<a target = "_blank" href = "https://www.medium.com/@vishaalc" title = "Medium"><img src = "images/medium.jpg" class = "icon" width = "50" height = "50" alt = "Medium"/></a>
-				<a target = "_blank" href = "https://www.twitter.com/vishaalc_" title = "Twitter"><img src = "images/twitter.png" class = "icon" width = "50" height = "50" alt = "Twitter"/>
+				
 				<a target = "_blank" href = "https://www.github.com/vishaalc"  title = "Github"><img src = "images/github.png" class = "icon" width = "50" height = "50" alt = "Github"/></a>
 				<a target = "_blank" href = "https://www.instagram.com/vishaalc" title = "Instagram"><img src = "images/instagram.png" class = "icon" width = "50" height = "50" alt = "Instagram"/></a>
 			</div> 
@@ -262,22 +243,16 @@
 	============================================================ -->
 		
 		<script type = "text/javascript">
-
 		$(window).scroll(function(){
-
 			$("#contactsection").each(function(i) {
 				var bottom_of_section = $(this).position().top + $(this).outerHeight();
 				var bottom_of_window = $(window).scrollTop() + $(window).height(); 
-
 				bottom_of_window = bottom_of_window + 150;
-
 				if (bottom_of_window > bottom_of_section) {
 					$(this).animate({"opacity":"1"}, 500);
 				}
 			});
-
 		});
-
 		</script>
 		
 	</div>
