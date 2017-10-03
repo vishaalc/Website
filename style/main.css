@@ -1,0 +1,325 @@
+/* ================= STYLING FOR PAGELOADER EFFECT  ================= */
+
+
+/* ================= STYLING FOR TYPING EFFECT  ================= */
+#typed {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .05em solid transparent; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: 
+    typing 1.5s steps(40, end),
+    blink-caret .75s step-end 7;
+}
+
+/* The typing effect */
+@keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #32cd32; }
+}
+
+/* ================= STYLING FOR UNDERLINE EFFECT  ================= */
+
+.slide-left-right {
+	text-decoration:none;
+	display: inline-block;
+}
+
+.slide-left-right:after {
+	content: '';
+	display: block;
+	height: 3px;
+	width: 0;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease; 
+	-webkit-transition: width .5s ease, background-color .5s ease;
+	-moz-transition: width .5s ease, background-color .5s ease;
+}
+
+.slide-left-right:hover:after {
+	width: 100%;
+	background: black;
+}
+
+a.slide-left-right:after {
+	content: '';
+	display: block;
+	height: 1px;
+	width: 0;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease; 
+	-webkit-transition: width .5s ease, background-color .5s ease;
+	-moz-transition: width .5s ease, background-color .5s ease;
+}
+
+a.slide-left-right:hover:after{
+	width: 100%;
+	background: black;
+}
+
+/* ================= STYLING FOR BASE PAGE  ================= */
+
+@font-face {
+	font-family: opensans;
+	src: url('open-sans/OpenSans-Regular.ttf');
+}
+
+html {
+	font-family: 'opensans', sans-serif; 
+}
+
+.title {
+	font-size:36pt;
+	/*text-shadow: 2px 2px #b2fff9;*/
+}
+
+#intro{
+	float:right;
+	padding:20px;
+}
+
+#profile{
+	position: absolute;
+   	top: 50%;
+   	left: 50%;
+   	max-width: 180px;
+   	max-height: 200px;
+   	margin-top: -100px; /* Half the height */
+   	margin-left: -150px; /* Supposed to be half the width but fixed it for aesthetic reasons */
+   	border:2px inset grey;
+   	border-radius:5px;
+}
+
+.shrinker{
+	transition: transform 1s;
+ 	transform: scaleX(0) scaleY(0);
+}
+
+#profile.loaded {
+    transform: scaleX(1) scaleY(1);
+}
+
+.floatL{
+	float:left;
+}
+
+
+/* ================= STYLING FOR ICON SHIT  ================= */
+
+#menu-options {
+}
+
+.icon-container {
+	width:10%;
+	float:left;
+}
+
+.icon-container img{
+	left: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+
+.icons {
+	width:64px;
+	height:64px;
+	padding:20px;
+	display:block;
+}
+
+ #desc-container{
+ 	display:none;
+	float:left;
+ }
+
+ .icon-desc{
+ 	padding: 41px 0px 41px 0px;
+ 	color:white;
+ }
+
+#credits-container{
+	position:fixed;
+	font-size:8pt;
+	color: grey;
+	right:0;
+	bottom:0;
+	padding: 20px;
+}
+
+/* ================= STYLING FOR SLIDER  ================= */
+
+.slider {
+    background-color:black;
+    display:none;
+}
+
+.slider div{
+	display:none;
+}
+
+/* ================= STYLING FOR CONTENT  ================= */
+#content_wrapper{
+	float:left;
+	min-height:85%;
+	max-height:85%;
+	min-width:50%;
+	margin-left:20%;
+	margin-top:3%;
+	position:fixed;
+	
+}
+
+#top, #right, #bottom, #left {
+	background-color:black;
+	position:absolute;
+}
+
+#top{
+	width:0px;
+	height:2px;
+	top:0;
+	left:0;
+}
+
+#right {
+	position:absolute;
+	width:2px;
+	height:0px;
+	top:0;
+	right:0;
+}
+
+#bottom{
+	position:absolute;
+	width:0px;
+	height:2px;
+	bottom:0;
+	right:0;
+}
+
+#left{
+	position:absolute;
+	width:2px;
+	height:0px;
+	bottom:0;
+	left:0;
+}
+
+div.main{
+	height:100%;
+	width:100%;
+	opacity:0;
+	position:absolute;
+}
+
+.navbar{
+	background-color:black;
+	width:100%;
+	/*position:absolute;*/
+	height:5%;
+	float:left;
+}
+
+.page{
+	clear:both;
+	padding:20px;
+	background-color:#FCF6E3;
+}
+
+
+
+.navbar span.cancel{
+	color:white;
+	height:100%;
+	float:right;
+	font-size:20px
+}
+
+.navbar span.cancel:hover{
+	cursor:pointer;
+	color:black;
+	background-color:white;
+}
+
+.page_header{
+	font-size:30px;
+	color:#ffb496;
+}
+
+/*
+div.page{
+	opacity:0.8;
+}
+*/
+
+div.page {
+	color: black;
+	height:89%;
+}
+
+#about_page, #work_page, #contact_page{
+	/*opacity:0;*/
+	display:none;
+}
+
+a {
+	color:#32cd32;
+}
+
+#resume img{
+	max-width:60%;
+	max-height:30%;
+	display:inline-block;
+	transition: opacity 0.3s;
+  	-webkit-transition: opacity 0.3s;
+}
+
+#resume img:hover{
+	opacity:0.5;
+}
+
+#skills {
+	display:table;
+	margin:0 auto;
+}
+
+.skill_list {
+	float:left;
+	font-size:13px;
+}
+
+#contact_page #profiles .socials img{
+	border-radius: 50%;
+	opacity: 0.9;
+	margin: 20px;
+	padding: 3px;
+	border: #a1a1a1;
+	float: left;
+	-webkit-transition: margin 0.15s ease-out;
+	-moz-transition: margin 0.15s ease-out;
+	-o-transition: margin 0.15s ease-out;
+}
+
+
+#contact_page #profiles .socials img:hover {
+	cursor: pointer;
+	margin-top: 5px;
+}
+
+#profiles {
+	text-align:center;
+}
+
+
+
+
+
