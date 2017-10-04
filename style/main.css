@@ -72,8 +72,10 @@ a.slide-left-right:hover:after{
 
 html {
 	font-family: 'opensans', sans-serif; 
-	height:100vh;
-	width:100vw;
+	/*height:100vh;
+	width:100vw;*/
+	min-height:703px;
+	min-width:1039px;
 }
 
 .title {
