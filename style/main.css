@@ -1,0 +1,251 @@
+/* ================= STYLING FOR TYPING EFFECT  ================= */
+ .typed {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .05em solid transparent; /* The typwriter cursor */
+    white-space: normal; /* Keeps the content on a single line */
+     /* Gives that scrolling effect as the typing happens */
+    animation: 
+      typing 0.8s steps(40, end),
+      blink-caret 1.0s step-end 3;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #32cd32; }
+  }
+
+
+/* ================= STYLING FOR UNDERLINE EFFECT  ================= */
+
+.slide-left-right {
+  text-decoration:none;
+  display: inline-block;
+}
+
+.slide-left-right:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease; 
+  -webkit-transition: width .5s ease, background-color .5s ease;
+  -moz-transition: width .5s ease, background-color .5s ease;
+}
+
+.slide-left-right:hover:after {
+  width: 100%;
+  background: white;
+}
+
+a.slide-left-right:after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 0;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease; 
+  -webkit-transition: width .5s ease, background-color .5s ease;
+  -moz-transition: width .5s ease, background-color .5s ease;
+}
+
+a.slide-left-right:hover:after{
+  width: 100%;
+  background: black;
+}
+
+/* ================= STYLING FOR BASE PAGE  ================= */
+
+#profile{
+  /*opacity:0;*/
+  height:0%;
+  width:0%;
+  filter:brightness(80%)
+}
+
+div.menu{
+  opacity:0;
+}
+
+@media (min-width: 601px) {
+  .typed {
+    white-space: nowrap;
+  }
+
+  .w3-row-padding .w3-third {
+      width: 20%;
+  }
+
+  .w3-twothird {
+      width: 80%;
+  }
+}
+
+.menu p {
+  text-align:center;
+  display:table;
+  webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu img {
+  height:60px;
+  width:60px;  
+}
+
+.menu span {
+  display:table-cell;
+  vertical-align:middle;
+  margin-left:10px;
+  display:none;
+  color:black;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid transparent;
+    margin: 20px 0;
+}
+
+.draw-box{
+  position:relative;
+}
+
+#top, #right, #bottom, #left {
+  background-color:#3E3E3E;
+  position:absolute;
+  z-index:100;
+}
+
+#navbar-cancel{
+  float:right;
+  color:white;
+  padding-right:5px;
+  width:25px;
+}
+
+#navbar-cancel:hover{
+  cursor:pointer;
+  color:black;
+  background-color:white;
+}
+
+#top{
+  width:0px;
+  height:22px;
+  top:0;
+}
+
+#right {
+  width:2px;
+  height:0px;
+  right:0;
+}
+
+#bottom{
+  width:0px;
+  height:2px;
+  bottom:0;
+  right:0;
+}
+
+#left{
+  width:2px;
+  height:0px;
+  left:0;
+  bottom:0;
+}
+
+#about_page, #work_page, #contact_page {
+  padding:30px;
+  /*display:none;*/
+  opacity:0;
+}
+
+#about_page{
+  background-color:#ffe5db;
+}
+
+#work_page{
+  background-color:#d1f0ff;
+}
+
+#contact_page {
+  background-color:#ebffea;
+}
+
+#resume {
+  width:220px;
+  height:150px;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+#resume:hover{
+  opacity:0.3;
+}
+
+.contact-link{
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.contact-link:hover {
+  color:orange;
+  
+}
+
+.socials img{
+  border-radius: 50%;
+  opacity: 0.9;
+  margin: 20px;
+  padding: 3px;
+  border: #a1a1a1;
+  float: left;
+  -webkit-transition: margin 0.15s ease-out;
+}
+
+.socials img:hover{
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.page-transition{
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.page-notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+#credits-container{
+  font-size:8pt;
+  color: grey;
+  
+  position: fixed;
+  bottom: 10px;
+  right: 10px
+}
+
