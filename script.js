@@ -10,6 +10,7 @@ $(function(){
 
 	var global = {open:false,currentpage:""};
 
+	/*
 	$('.menu img').hover(
 		function() {
 	    	$(this).css({"cursor":"pointer"});
@@ -20,6 +21,16 @@ $(function(){
 		    $(this).css({"cursor":"auto"});
 	    	$(this).parent("p").css({"padding-left":"0px"});
 	    	$(this).next().fadeOut("fast").css("display","table-cell");;
+		}
+	);	
+	*/
+
+	$('.menu img').hover(
+		function() {
+			$('#' + $(this).attr('data-role')).css("opacity",1);
+		}, 
+		function() {
+			$('#' + $(this).attr('data-role')).css("opacity",0);
 		}
 	);	
 

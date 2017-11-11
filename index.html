@@ -4,15 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel='stylesheet' href='main.css'>
+<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+<link rel='stylesheet' href='style/main.css'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src = "script.js"></script>
 
 <style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Barlow", sans-serif}
 </style>
 
 <body bgcolor="white">
@@ -34,20 +33,17 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           </div>
         </div>
 
-        <div class="menu">
-          <p>
-            <img src="style/images/nolan/me-icon.png" data-id="about_page"></img>
-            <span> About Me </span>
-          </p>
-          <p>
-            <img src="style/images/nolan/me-icon.png" data-id="work_page"></img>
-            <span> My Work </span>
-          </p>
-          <p>
-            <img src="style/images/nolan/contact-icon.png" data-id="contact_page"></img>
-            <span> Contact + </span>
-          </p>
+        <div class="menu space-around">
+            <img src="style/images/nolan/me-icon.png" data-id="about_page" data-role="about_desc"></img>
+            <img src="style/images/nolan/build-icon.png" data-id="work_page" data-role="work_desc"></img>
+            <img src="style/images/nolan/contact-icon.png" data-id="contact_page" data-role="contact_desc"></img>
         </div>
+        <div class="menu space-around">
+            <span id="about_desc">About Me</span>
+            <span id="work_desc">My Work</span>            
+            <span id="contact_desc">Contact +</span>
+        </div>
+
       </div><br>
 
     <!-- End Left Column -->
@@ -73,7 +69,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
               <hr>
             </div>
             <div class="w3-container">
-              A goal of mine is to grow as an individual, as a friend, as well as an engineer.
+              A goal of mine is to grow as an individual, as a friend, as well as an engineer.<br>
               Though this is a lifelong process, the tenacity, work ethic, and ambition I have are some of my biggest strengths.
               <hr>
             </div>
@@ -106,9 +102,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
                 <span> Languages </span>
                 <ul> 
                   <li> Python </li>
+                  <li> Java </li>
                   <li> C++ </li>
                   <li> HTML, CSS, JavaScript </li>
-                  <li> PHP </li>
                   <li> SQL </li>
                 </ul>
               </div>

@@ -88,13 +88,8 @@ div.menu{
   }
 }
 
-.menu p {
-  text-align:center;
-  display:table;
-  webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+.menu {
+  display: flex;
 }
 
 .menu img {
@@ -102,12 +97,23 @@ div.menu{
   width:60px;  
 }
 
+.menu img:hover{
+  cursor:pointer;
+}
+
 .menu span {
-  display:table-cell;
-  vertical-align:middle;
-  margin-left:10px;
-  display:none;
-  color:black;
+  opacity:0;
+  webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu.space-around {
+  justify-content: space-around;
+}
+.menu.space-between {  
+  justify-content: space-between;
 }
 
 hr {
