@@ -1,193 +1,22 @@
 <!DOCTYPE html>
-<html>
-<title>V</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
-<link rel='stylesheet' href='style/main.css'>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-<script src = "script.js"></script>
-
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Barlow", sans-serif}
-</style>
-
-<body bgcolor="white">
-
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
-
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-  
-    <!-- Left Column -->
-    <div class="w3-third">
-      <div class="w3-text-grey">
-
-        <div class="w3-display-container">
-          <img id="profile" src="style/images/me_cropped.jpg" alt="Picture"></img>
-          <div class="w3-display-bottomleft w3-container w3-text-white">
-            <h2 class="typed slide-left-right">Vishaal</h2>
-          </div>
-        </div>
-
-        <div class="menu space-around">
-            <img src="style/images/nolan/me-icon.png" data-id="about_page" data-role="about_desc"></img>
-            <img src="style/images/nolan/build-icon.png" data-id="work_page" data-role="work_desc"></img>
-            <img src="style/images/nolan/contact-icon.png" data-id="contact_page" data-role="contact_desc"></img>
-        </div>
-        <div class="menu space-around">
-            <span id="about_desc">About Me</span>
-            <span id="work_desc">My Work</span>            
-            <span id="contact_desc">Contact +</span>
-        </div>
-
-      </div><br>
-
-    <!-- End Left Column -->
-    </div>
-
-    <!-- Right Column -->
-    <div class="w3-twothird">
-      <div class="w3-container w3-margin-bottom">
-        <div class="draw-box">
-          <div id="top"><span id="navbar-cancel"> | &nbsp;x </span></div>
-          <div id="right"></div>
-          <div id="bottom"></div>
-          <div id="left"></div>
-
-          <div id="about_page">
-            <div class="w3-container">
-              <hr>
-              <h2 class="typed">Hi, welcome to my site.</h2>
-              <hr>
-            </div>
-            <div class="w3-container">
-              Spanning a variety of facets, I genuinely enjoy learning.
-              <hr>
-            </div>
-            <div class="w3-container">
-              A goal of mine is to grow as an individual, as a friend, as well as an engineer.<br>
-              Though this is a lifelong process, the tenacity, work ethic, and ambition I have are some of my biggest strengths.
-              <hr>
-            </div>
-            <div class="w3-container">
-               I'm a passionate about music, good company, and building.<br>
-               I'm also into videography, basketball, cooking, barbering, drawing, and producing beats.<br>
-               <hr>
-            </div>
-          </div>
-          <!-- End About page -->
-
-          <div id="work_page">
-            <div class="w3-container">
-              <hr>
-              <h2 class="typed">I'm incredibly interested in building.</h2>
-              <hr>
-            </div>
-            <div class="w3-container">
-              I'm keen on fruitful execution, and hope to work at the intersection of developing technology, creative design and making change.
-              <hr>
-            </div>
-            <div class="w3-container" style="text-align:center;">
-              <a target = "_blank" href="resume_v2.pdf">
-                  <img id="resume" src="style/images/vresume_gradient.png"></img>
-                  <!--<img src="style/images/direct.png"></img>-->
-                </a>
-            </div>
-            <div class="w3-container" style="text-align:center;">
-              <div style="display:inline-block;text-align:left;">
-                <span> Languages </span>
-                <ul> 
-                  <li> Python </li>
-                  <li> Java </li>
-                  <li> C++ </li>
-                  <li> HTML, CSS, JavaScript </li>
-                  <li> SQL </li>
-                </ul>
-              </div>
-
-              <div style="display:inline-block;text-align:left;">
-                <span> Creation </span>
-                <ul> 
-                  <li> Adobe Photoshop </li>
-                  <li> Solidworks </li>
-                  <li> Microsoft Office Suite </li>
-                  <li> Logic Pro X </li>
-                  <br>
-                </ul>
-              </div>
-
-              <div style="display:inline-block;text-align:left;">
-                <span> Personal </span>
-                <ul>
-                  <li> Social and teamwork skills </li>
-                  <li> Leadership </li>
-                  <li> Strategy and analysis </li>
-                  <li> Quick learner </li>
-                  <li> Creativity </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- End Work page -->
-
-          <div id="contact_page">
-            <div class="w3-container">
-              <hr>
-              <h2 class="typed">I love interacting with people.</h2>
-              <hr>
-            </div>
-            <div class="w3-container">
-              If you have questions, comments, or anything really, feel free to send me a message!
-              <hr>
-            </div>
-            <div class="w3-container">
-              Thanks for stopping by.
-              <hr>
-            </div>
-            <div class="w3-container">
-               <span class="contact-link"><font size="5 pt"> &#9993;</font> &nbsp; <a href="mailto:vschittur@gmail.com" class="slide-left-right"> vschittur@gmail.com</a></span><br>
-                <span><font size="5 pt">&#9743;</font> &nbsp; (416) 828 - 9031 </span><br>
-                <span><font size="5 pt"> &#9758;</font> &nbsp; Mississauga and Waterloo </span><br>
-               <hr>
-            </div>
-            <div class="w3-container" style="text-align:center;">
-              <div class= "socials" style="display:inline-block;">
-                <a target = "_blank" href = "https://www.facebook.com/vishaal.chittur" title = "Facebook">
-                  <img src = "style/images/socials/facebook.png" class = "icon" width = "50" height = "50" alt = "Facebook"/>
-                </a>
-                <a target = "_blank" href = "https://www.linkedin.com/in/vschittur"  title = "LinkedIn">
-                  <img src = "style/images/socials/linkedin.png" class = "icon" width = "50" height = "50" alt = "LinkedIn"/>
-                </a>
-                <a target = "_blank" href = "https://www.medium.com/@vishaalc" title = "Medium">
-                  <img src = "style/images/socials/medium.jpg" class = "icon" width = "50" height = "50" alt = "Medium"/>
-                </a>
-                <a target = "_blank" href = "https://www.github.com/vishaalc"  title = "Github">
-                  <img src = "style/images/socials/github.png" class = "icon" width = "50" height = "50" alt = "Github"/>
-                </a>
-                <a target = "_blank" href = "https://www.instagram.com/vishaalc" title = "Instagram">
-                  <img src = "style/images/socials/instagram.png" class = "icon" width = "50" height = "50" alt = "Instagram"/>
-                </a>
-                <a target = "_blank" href = "https://soundcloud.com/whatisv" title = "Soundcloud">
-                  <img src = "style/images/socials/soundcloud.jpg" class = "icon" width = "50" height = "50" alt = "Soundcloud"/>
-                </a>
-              </div> 
-            </div>
-          </div>
-          <!-- End Contact Page -->
-        </div>
-      </div>
-
-    <!-- End Right Column -->
-    </div>
-    
-  <!-- End Grid -->
-  </div>
-  
-  <!-- End Page Container -->
-</div>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vishaal</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/libs/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/libs/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body class="home">
+	<div id="main-content">
+		<div id="preload"></div>
+		<div class="mobile"></div>
+		<div class="hide-menu"></div>
+		<div class="container">
+			<div class="row"></div>
+		</div>
+	</div>
+	<footer id="footer" class="footer"></footer>
 </body>
 </html>
