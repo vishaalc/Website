@@ -1,22 +1,70 @@
-/* ===========  3. General  =========== */
+/* ========== Writing  ========== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', serif;
+  color: #666666 !important;
+  font-weight: 400;
+  line-height: 1.2em;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none !important;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+a:hover{
+    cursor:pointer;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+}
+
+iframe {
+  border: 0;
+  max-width: 100%;
+}
+
+/* ==========  General  ========== */
 body {
   margin: 0;
   padding: 50px 0 0;
   font-family: 'Lato', serif;
   font-size: 14px;
-  background: #ffffff;
+  background: #ececec !important;
   color: #333333;
   overflow-x: hidden;
   line-height: 24px;
   word-spacing: 1px;
 }
+
 .container {
   max-width: 1000px;
 }
+
 .mobile {
   display: none;
   margin-bottom: 60px;
 }
+
 .mobile .menu-mobile {
   width: 60px;
   height: 60px;
@@ -62,7 +110,7 @@ body {
   transition: visibility 0.3s ease, opacity 0.3s ease;
 }
 
-/* ===========  4. Header  =========== */
+/* ==========  Header stuff  ========== */
 .header {
   width: 220px;
   bottom: 0;
@@ -74,23 +122,11 @@ body {
 .header-text {
   margin-bottom: 50px;
 }
-.header-text blockquote {
-  font-size: 16px;
-  padding-left: 50px;
-}
-.header-text blockquote:before {
-  font-size: 30px;
-}
+
 .menu-left .header {
   text-align: left;
 }
-.menu-left .main-menu .sub-menu {
-  padding-left: 0;
-  padding-right: 20px;
-  right: 100%;
-  left: auto;
-  text-align: right;
-}
+
 .table {
   display: table;
   width: 100%;
@@ -100,6 +136,7 @@ body {
   display: table-cell;
   vertical-align: middle;
 }
+
 .main-menu {
   font-family: 'Roboto', serif;
   letter-spacing: 1px;
@@ -123,37 +160,19 @@ body {
 .main-menu li {
   position: relative;
 }
-.main-menu li:hover > .sub-menu {
-  opacity: 1;
-  visibility: visible;
+
+.profile {
+  padding-bottom: 15px;
 }
-.main-menu .sub-menu {
-  position: absolute;
-  width: 200px;
-  top: 0;
-  left: 100%;
-  font-size: 14px;
-  text-align: left;
-  visibility: hidden;
-  padding-left: 20px;
-  opacity: 0;
+.profile img {
+    width:45%;
+    border-radius:10%;
+    filter: brightness(90%);
 }
-.main-menu .sub-menu li {
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: #ababab;
-}
-.main-menu .sub-menu li:first-child {
-  padding-top: 10px;
-}
-.main-menu .sub-menu li:last-child {
-  padding-bottom: 10px;
-}
-.main-menu .sub-menu a {
-  color: #000000 !important;
-}
+
 .logo {
-  font-size: 40px;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 42px;
   color: #000000;
   /*text-transform: uppercase;*/
   padding-bottom: 60px;
@@ -163,6 +182,7 @@ body {
 .logo a {
   color: inherit;
 }
+
 .socials {
   padding-top: 50px;
 }
@@ -170,87 +190,21 @@ body {
   margin-right: 8px;
   font-size: 14px;
 }
-.socials .fa-search {
-  color: #000000;
-}
-.box-search {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 999;
-  background-color: #ffffff;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: opacity 0.3s ease, visibility 0.3s ease;
-  -moz-transition: opacity 0.3s ease, visibility 0.3s ease;
-  -ms-transition: opacity 0.3s ease, visibility 0.3s ease;
-  -o-transition: opacity 0.3s ease, visibility 0.3s ease;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-.box-search input[type="search"] {
-  height: 50px;
-  font-size: 24px;
-  padding-top: 0;
-  border: none;
-  border-bottom: 1px solid #000000;
-}
-.box-search.active {
-  opacity: 1;
-  visibility: visible;
-}
-.search-form {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 600px;
-  position: relative;
-  padding-bottom: 200px;
-  padding-top: 100px;
-}
-.kd-close {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  display: inline-block;
-  top: 0;
-  right: 0;
-  cursor: pointer;
-  font-size: 24px;
-  color: #000000;
-  background-color: #ffffff;
-  line-height: 48px;
-  text-align: center;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-}
-.kd-close:before {
-  content: '';
-  width: 30px;
-  height: 2px;
-  background-color: #000000;
-  display: block;
-  -webkit-transform: rotate(44deg) translate(26px, 10px);
-  -moz-transform: rotate(44deg) translate(26px, 10px);
-  transform: rotate(44deg) translate(26px, 10px);
-}
-.kd-close:after {
-  content: '';
-  width: 30px;
-  height: 2px;
-  background-color: #000000;
-  display: block;
-  -webkit-transform: rotate(-46deg) translate(-10px, 24px);
-  -moz-transform: rotate(-46deg) translate(-10px, 24px);
-  transform: rotate(-46deg) translate(-10px, 24px);
-}
+
 .copyright {
+  padding-top: 20px;
   font-size: 12px;
   color: #ababab;
 }
 
-/* ===========  7. Footer  =========== */
+/* ========== Artifacts ========== */
+.artifacts {
+  /*padding-top: 20px;*/
+  padding-left: 80px;
+  padding-right: 50px;
+}
+
+/* ==========  Footer stuff ========== */
 .footer-inner {
   margin-top: 80px;
   border-top: 1px solid #ababab;
@@ -271,7 +225,7 @@ body {
   padding: 0;
 }
 
-/* ===========  8. Preload  =========== */
+/* ==========  Preload  ========== */
 #preload {
   top: 0;
   left: 0;
@@ -321,7 +275,7 @@ body {
   }
 }
 
-/* ===========  9. Responsive  =========== */
+/* ==========  Responsive control  ========== */
 @media screen and (max-width: 991px) {
   .preload {
     display: none;
@@ -347,7 +301,8 @@ body {
   }
   .header .logo,
   .menu-left .header .logo {
-    color: #ffffff;
+    /*color: #ffffff;*/
+    padding-bottom:0px;
   }
   .header.active,
   .menu-left .header.active {
@@ -369,27 +324,8 @@ body {
   .menu-left .main-menu .active a {
     color: #ffffff;
   }
-  .main-menu .sub-menu,
-  .menu-left .main-menu .sub-menu {
-    display: none;
-    position: relative;
-    width: 100%;
-    left: 0;
-    visibility: visible;
-    opacity: 1;
-    padding-left: 0;
-    text-align: center;
-  }
-  .main-menu .sub-menu li,
-  .menu-left .main-menu .sub-menu li,
-  .main-menu .sub-menu li:first-child,
-  .menu-left .main-menu .sub-menu li:first-child,
-  .main-menu .sub-menu li:last-child,
-  .menu-left .main-menu .sub-menu li:last-child {
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-  .projects {
+  
+  .artifacts {
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -400,38 +336,24 @@ body {
   .socials a {
     margin-right: 10px;
   }
-  .socials .fa-search {
-    color: #ffffff;
-  }
+ 
   .hide-menu.active {
     visibility: visible;
     opacity: 1;
   }
 }
+
 @media screen and (max-width: 768px) {
   body {
     padding-top: 30px;
   }
-  .project-item {
+  .artifact {
     margin-bottom: 30px;
   }
 }
-@media screen and (max-width: 600px) {
-  .post .post-content {
-    padding: 20px;
-  }
-  .project .detail-content {
-    padding: 20px;
-  }
-  .project .images-project {
-    margin-top: 30px;
-  }
-  #comments .children {
-    padding-left: 0;
-  }
-}
+
 @media screen and (max-width: 480px) {
-  .projects {
+  .artifacts {
     padding-left: 0;
     padding-right: 0;
   }
@@ -446,20 +368,10 @@ body {
     font-size: 30px;
     padding-left: 20px;
   }
-  .project-item {
+  .artifact {
     margin-bottom: 20px;
   }
-  #comments .comment-avatar {
-    float: none;
-  }
-  #comments .comment-context {
-    margin-top: 20px;
-    margin-left: 0;
-    padding-left: 0;
-  }
-  #comments .reply {
-    text-align: right;
-  }
+
   .navigation-wrap {
     margin-top: 30px;
   }

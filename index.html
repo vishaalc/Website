@@ -1,18 +1,18 @@
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Vishaal</title>
+		<title>V</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="format-detection" content="telephone=no">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 
-		<meta charset="utf-8">
-
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	</head>
 
 	<body class="home">
@@ -28,20 +28,16 @@
 			<!-- Mobile Menu -->
 			<div class="mobile">
 				<div class="container">
-					<!-- Mobile -->
 					<div class="menu-mobile">
 						<span class="item item-1"></span>
 						<span class="item item-2"></span>
 						<span class="item item-3"></span>
 					</div>
-					<!-- End Mobile -->
-					<!-- Picture -->
-					<!-- <img id="profile" src="css/images/me.JPG" alt="Vishaal" style="height:17%;width:15%;float:left; border-radius:50%"> -->
+					
 					<!-- Logo -->
 					<div class="logo">
-						<a href="index.html">vishaal</a>
+						<a href="index.html">Vishaal</a>
 					</div>
-					<!-- End Logo -->
 				</div>
 			</div>
 			<div class="hide-menu"></div>
@@ -52,58 +48,61 @@
 						<div class="header affix">
 							<div class="table">
 								<div class="table-cell">
+									<!-- Picture -->
+									<div class="profile">
+										<img src="css/images/me.JPG" alt="Vishaal">
+									</div>
+
 									<!-- Logo -->
 									<div class="logo">
-										<a href="index.html">vishaal</a>
+										<span>Vishaal<span>
 									</div>
-									<!-- End Logo -->
 
 									<!-- Navigation -->
 									<div class="main-menu">
 										<nav>
 											<ul class="menu-list">
 												<li class="active menu-item">
-													<a href="index.html">Home</a>
+													<a target="home">Home</a>
 												</li>
-												<li>
-													<a href="#">Experience</a>
+												<li class="menu-item">
+													<a target="work">Work</a>
 												</li>
-												<li>
-													<a href="#">Contact</a>
+												<li class="menu-item">
+													<a target="contact">Contact</a>
 												</li>
-												<li>
-													<a href="#">Other</a>
+												<li class="menu-item">
+													<a target="other">Other</a>
 												</li>
 											</ul>
 										</nav>
 									</div>
-									<!-- End Navigation -->
 
 									<!-- Socials -->
 									<div class="socials">
-										<a href="#" title="Behance">
-											<i class="fa fa-behance"></i>
+										<a href="https://github.com/vishaalc" title="Github" target="_blank">
+											<i class="fa fa-github"></i>
 										</a>
-										<a href="#" title="Dribbble">
-											<i class="fa fa-dribbble"></i>
+										<a href="https://www.linkedin.com/in/vschittur/" title="LinkedIn" target="_blank">
+											<i class="fa fa-linkedin"></i>
 										</a>
-										<a href="#" title="Facebook">
+										<a href="https://www.facebook.com/vishaal.chittur" title="Facebook" target="_blank">
 											<i class="fa fa-facebook"></i>
 										</a>
-										<a href="#" title="Google Plus">
-											<i class="fa fa-google-plus"></i>
-										</a>
-										<a href="#" title="Instagram">
+										<a href="https://www.instagram.com/vishaalc/" title="Instagram" target="_blank">
 											<i class="fa fa-instagram"></i>
 										</a>
-										<a href="#" title="Search this site">
-											<i class="fa fa-search"></i>
+										<a href="https://twitter.com/vishaalc_" title="Twitter" target="_blank">
+											<i class="fa fa-twitter"></i>
+										</a>
+										<a href="https://medium.com/@vishaalc" title="Medium" target="_blank">
+											<i class="fa fa-medium"></i>
 										</a>
 									</div>
 
 									<div class="copyright">
 										<p>
-											Designed by me @ 2019. 
+											Written by me @ 2019. 
 										</p>
 									</div>
 
@@ -113,6 +112,63 @@
 					</div>
 
 					<div class="col-md-9 col-md-offset-3">
+						<div class="artifacts">
+							<div class="artifact" id="home">
+								<p>
+									<h3 class="title"> >> home</h3>
+									<br> Hi, welcome to my site! <br>
+									<br> 
+										Here you can find some stuff about my skills, the projects I've worked on,
+										as well as a little bit about me. 
+									<br>
+
+									<br> I'm into solving problems, learning, and building/breaking things.
+									<br> Passionate about music, good company, and the experience of life.
+								</p>
+							</div>
+
+							<div class="artifact" id="work" style="display:none;">
+								<p>
+									<h3 class="title">>> work</h3>
+									<br> Incredibly interested in technology and everything about it.<br>
+									<br> 
+										I aim to actively implement solutions from data-driven insights and 
+										make decisions based on fundamental design principles. 
+									<br>
+									<br> Working to [ one day hopefully ] create an impact at the intersection of development and change in the world.<br>
+
+									<br>
+										<a target="_blank" href="files/resumev5.pdf">
+						                  <!-- <img id="resume" src="style/images/vresume_gradient.png"> -->
+						                  Here's a copy of my resume.
+						                </a>
+						            <br>
+								</p>
+							</div>
+
+							<div class="artifact" id="contact" style="display:none;">
+								<p>
+									<h3 class="title">>> contact</h3>
+									<br> I love interacting with people. <br>
+									<br> If you have questions, comments, or anything really, feel free to reach out! 
+									<br>
+										[ see below for details 
+										<font size="3 pt"> ✉</font>
+										<font size="3 pt">☏</font>
+										<font size="3 pt"> ☞</font> ]
+									<br>
+									<br> Thanks for stopping by.
+									
+								</p>
+							</div>
+
+							<div class="artifact" id="other" style="display:none;">
+								<p>
+									<h3 class="title">>> other</h3>
+									<br> #WIP
+								</p>
+							</div>
+						</div>
 					</div>
 
 				</div>
@@ -130,8 +186,8 @@
 								<div class="col-sm-6">
 									<h2 class="title">About Me</h2>
 									<p>
-										Hey I'm Vishaal.
-										<br>I'm a Software Engineer based in Toronto, specializing in backend engineering and systems design.
+										Engineering student from Toronto,<br>
+										I like working with information, backend architectures, and systems design.
 									</p>
 								</div>
 								<div class="col-sm-6">

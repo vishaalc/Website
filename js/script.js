@@ -1,25 +1,36 @@
-/**
- * 1. Search Popup
- * 2. Index Tiled
- * 3. Menu Mobile
- * 4. Project Detail
- * 5. Preload
- */
-
 'use strict';
 
 (function ($) {
 
 	$(document).ready(function () {
 
-		var $header = $('.header'),
-			$search = $('.fa-search', $header);
+		// Preload bounce
+		var $preload = $('#preload');
+		if ($preload.length) {
+			$(window).on('load', function () {
+				$preload.fadeOut(400);
+			});
+		}
 
-		// 3. Menu Mobile
-		var $btnMenu = $('.menu-mobile'),
+		// Toggle pages
+		$('li.menu-item').on('click', function (e) {
+		    var previousItem = $('.menu-list > li.active')
+		    previousItem.removeClass('active');
+		    $(this).addClass('active');
+
+		    var previousPage = previousItem.children('a').attr('target'),
+		    	nextPage = $(this).children('a').attr('target');
+		    $('#'+previousPage).hide(500);
+		    $('#'+nextPage).show(500);
+		});
+
+		var $header = $('.header');
+
+		// Mobile Menu
+		var $menuBtn = $('.menu-mobile'),
 			$hideMenu = $('.hide-menu');
 
-		$btnMenu.on('click', function () {
+		$menuBtn.on('click', function () {
 			$header.toggleClass('active');
 
 			if ($header.hasClass('active')) {
@@ -29,20 +40,14 @@
 				$hideMenu.removeClass('active');
 			}
 		});
-		
+
+		// Hide dim overlay
 		$hideMenu.on('click', function () {
 			$header.removeClass('active');
 			$hideMenu.removeClass('active');
 		});
 
-		// 5. Preload
-		var $preload = $('#preload');
-
-		if ($preload.length) {
-			$(window).on('load', function () {
-				$preload.fadeOut(400);
-			});
-		}
+		
 	});
 
 })(jQuery);
