@@ -22,6 +22,9 @@
 		    	nextPage = $(this).children('a').attr('target');
 		    $('#'+previousPage).hide(500);
 		    $('#'+nextPage).show(500);
+
+		    $header.removeClass('active');
+			$hideMenu.removeClass('active');
 		});
 
 		var $header = $('.header');
