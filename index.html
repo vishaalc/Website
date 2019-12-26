@@ -1,193 +1,225 @@
 <!DOCTYPE html>
-<html>
-<title>V</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
-<link rel='stylesheet' href='style/main.css'>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-<script src = "script.js"></script>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>VISHAAL</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
 
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Barlow", sans-serif}
-</style>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-<body bgcolor="white">
+		<link rel="apple-touch-icon" sizes="180x180" href="files/images/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="files/images/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="files/images/favicon/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
 
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	</head>
 
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-  
-    <!-- Left Column -->
-    <div class="w3-third">
-      <div class="w3-text-grey">
+	<body class="home">
+		<!-- Wrapper -->
+		<div id="main-content">
+			<!-- Preload -->
+			<div id="preload" style="display: none;">
+				<div class="kd-bounce">
+					<div></div>
+					<div></div>
+				</div>
+			</div>
 
-        <div class="w3-display-container">
-          <img id="profile" src="style/images/me_cropped.jpg" alt="Picture"></img>
-          <div class="w3-display-bottomleft w3-container w3-text-white">
-            <h2 class="typed slide-left-right">Vishaal</h2>
-          </div>
-        </div>
+			<!-- Mobile Menu -->
+			<div class="mobile">
+				<div class="container">
+					<div class="menu-mobile">
+						<span class="item item-1"></span>
+						<span class="item item-2"></span>
+						<span class="item item-3"></span>
+					</div>
+					
+					<!-- Logo -->
+					<div class="logo">
+						<a href="index.html">vishaal</a>
+					</div>
+				</div>
+			</div>
+			<div class="hide-menu"></div>
 
-        <div class="menu space-around">
-            <img src="style/images/nolan/me-icon.png" data-id="about_page" data-role="about_desc"></img>
-            <img src="style/images/nolan/build-icon.png" data-id="work_page" data-role="work_desc"></img>
-            <img src="style/images/nolan/contact-icon.png" data-id="contact_page" data-role="contact_desc"></img>
-        </div>
-        <div class="menu space-around">
-            <span id="about_desc">About Me</span>
-            <span id="work_desc">My Work</span>            
-            <span id="contact_desc">Contact +</span>
-        </div>
+			<div class="container">
+				<div class="row">
+					<div class="col-mod-3">
+						<div class="header affix">
+							<div class="table">
+								<div class="table-cell">
+									<!-- Picture -->
+									<div class="profile">
+										<img src="files/images/me.JPG" alt="Vishaal">
+									</div>
 
-      </div><br>
+									<!-- Logo -->
+									<div class="logo">
+										<span>vishaal<span>
+									</div>
 
-    <!-- End Left Column -->
-    </div>
+									<!-- Navigation -->
+									<div class="main-menu">
+										<nav>
+											<ul class="menu-list">
+												<li class="active menu-item">
+													<a target="home">Home</a>
+												</li>
+												<li class="menu-item">
+													<a target="work">Work</a>
+												</li>
+												<li class="menu-item">
+													<a target="contact">Contact</a>
+												</li>
+												<li class="menu-item">
+													<a target="other">Other</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
 
-    <!-- Right Column -->
-    <div class="w3-twothird">
-      <div class="w3-container w3-margin-bottom">
-        <div class="draw-box">
-          <div id="top"><span id="navbar-cancel"> | &nbsp;x </span></div>
-          <div id="right"></div>
-          <div id="bottom"></div>
-          <div id="left"></div>
+									<!-- Socials -->
+									<div class="socials">
+										<a href="https://github.com/vishaalc" title="Github" target="_blank">
+											<i class="fa fa-github"></i>
+										</a>
+										<a href="https://www.linkedin.com/in/vschittur/" title="LinkedIn" target="_blank">
+											<i class="fa fa-linkedin"></i>
+										</a>
+										<a href="https://www.facebook.com/vishaal.chittur" title="Facebook" target="_blank">
+											<i class="fa fa-facebook"></i>
+										</a>
+										<a href="https://www.instagram.com/vishaalc/" title="Instagram" target="_blank">
+											<i class="fa fa-instagram"></i>
+										</a>
+										<a href="https://twitter.com/vishaalc_" title="Twitter" target="_blank">
+											<i class="fa fa-twitter"></i>
+										</a>
+										<a href="https://medium.com/@vishaalc" title="Medium" target="_blank">
+											<i class="fa fa-medium"></i>
+										</a>
+										<a href="https://open.spotify.com/user/12167754967?si=4FePIp46QySqCcNsIydFFg" title="Spotify" target="_blank">
+											<i class="fa fa-spotify"></i>
+										</a>
+									</div>
 
-          <div id="about_page">
-            <div class="w3-container">
-              <hr>
-              <h2 class="typed">Hi, welcome to my site.</h2>
-              <hr>
-            </div>
-            <div class="w3-container">
-              Spanning a variety of facets, I genuinely enjoy learning.
-              <hr>
-            </div>
-            <div class="w3-container">
-              A goal of mine is to grow as an individual, as a friend, as well as an engineer.<br>
-              Though this is a lifelong process, the tenacity, work ethic, and ambition I have are some of my biggest strengths.
-              <hr>
-            </div>
-            <div class="w3-container">
-               I'm a passionate about music, good company, and building.<br>
-               I'm also into videography, basketball, cooking, barbering, drawing, and producing beats.<br>
-               <hr>
-            </div>
-          </div>
-          <!-- End About page -->
+									<div class="copyright">
+										<p>
+											Written by me @ 2019. 
+										</p>
+									</div>
 
-          <div id="work_page">
-            <div class="w3-container">
-              <hr>
-              <h2 class="typed">I'm incredibly interested in building.</h2>
-              <hr>
-            </div>
-            <div class="w3-container">
-              I'm keen on fruitful execution, and hope to work at the intersection of developing technology, creative design and making change.
-              <hr>
-            </div>
-            <div class="w3-container" style="text-align:center;">
-              <a target = "_blank" href="resume_v2.pdf">
-                  <img id="resume" src="style/images/vresume_gradient.png"></img>
-                  <!--<img src="style/images/direct.png"></img>-->
-                </a>
-            </div>
-            <div class="w3-container" style="text-align:center;">
-              <div style="display:inline-block;text-align:left;">
-                <span> Languages </span>
-                <ul> 
-                  <li> Python </li>
-                  <li> Java </li>
-                  <li> C++ </li>
-                  <li> HTML, CSS, JavaScript </li>
-                  <li> SQL </li>
-                </ul>
-              </div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-              <div style="display:inline-block;text-align:left;">
-                <span> Creation </span>
-                <ul> 
-                  <li> Adobe Photoshop </li>
-                  <li> Solidworks </li>
-                  <li> Microsoft Office Suite </li>
-                  <li> Logic Pro X </li>
-                  <br>
-                </ul>
-              </div>
+					<div class="col-md-9 col-md-offset-3">
+						<div class="artifacts">
+							<div class="artifact" id="home">
+								<p>
+									<h3 class="title"> >> home</h3>
+									<br> Hi, welcome to my site! <br>
+									<br> 
+										Here you can find some stuff about my skills, the projects I've worked on,
+										as well as a little bit about me. 
+									<br>
 
-              <div style="display:inline-block;text-align:left;">
-                <span> Personal </span>
-                <ul>
-                  <li> Social and teamwork skills </li>
-                  <li> Leadership </li>
-                  <li> Strategy and analysis </li>
-                  <li> Quick learner </li>
-                  <li> Creativity </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- End Work page -->
+									<br> I'm into solving problems, learning, and building/breaking things.
+									<br> Passionate about music, good company, and the experience of life.
+								</p>
+							</div>
 
-          <div id="contact_page">
-            <div class="w3-container">
-              <hr>
-              <h2 class="typed">I love interacting with people.</h2>
-              <hr>
-            </div>
-            <div class="w3-container">
-              If you have questions, comments, or anything really, feel free to send me a message!
-              <hr>
-            </div>
-            <div class="w3-container">
-              Thanks for stopping by.
-              <hr>
-            </div>
-            <div class="w3-container">
-               <span class="contact-link"><font size="5 pt"> &#9993;</font> &nbsp; <a href="mailto:vschittur@gmail.com" class="slide-left-right"> vschittur@gmail.com</a></span><br>
-                <span><font size="5 pt">&#9743;</font> &nbsp; (416) 828 - 9031 </span><br>
-                <span><font size="5 pt"> &#9758;</font> &nbsp; Mississauga and Waterloo </span><br>
-               <hr>
-            </div>
-            <div class="w3-container" style="text-align:center;">
-              <div class= "socials" style="display:inline-block;">
-                <a target = "_blank" href = "https://www.facebook.com/vishaal.chittur" title = "Facebook">
-                  <img src = "style/images/socials/facebook.png" class = "icon" width = "50" height = "50" alt = "Facebook"/>
-                </a>
-                <a target = "_blank" href = "https://www.linkedin.com/in/vschittur"  title = "LinkedIn">
-                  <img src = "style/images/socials/linkedin.png" class = "icon" width = "50" height = "50" alt = "LinkedIn"/>
-                </a>
-                <a target = "_blank" href = "https://www.medium.com/@vishaalc" title = "Medium">
-                  <img src = "style/images/socials/medium.jpg" class = "icon" width = "50" height = "50" alt = "Medium"/>
-                </a>
-                <a target = "_blank" href = "https://www.github.com/vishaalc"  title = "Github">
-                  <img src = "style/images/socials/github.png" class = "icon" width = "50" height = "50" alt = "Github"/>
-                </a>
-                <a target = "_blank" href = "https://www.instagram.com/vishaalc" title = "Instagram">
-                  <img src = "style/images/socials/instagram.png" class = "icon" width = "50" height = "50" alt = "Instagram"/>
-                </a>
-                <a target = "_blank" href = "https://soundcloud.com/whatisv" title = "Soundcloud">
-                  <img src = "style/images/socials/soundcloud.jpg" class = "icon" width = "50" height = "50" alt = "Soundcloud"/>
-                </a>
-              </div> 
-            </div>
-          </div>
-          <!-- End Contact Page -->
-        </div>
-      </div>
+							<div class="artifact" id="work" style="display:none;">
+								<p>
+									<h3 class="title">>> work</h3>
+									<br> Incredibly interested in technology and everything about it.<br>
+									<br> 
+										I aim to actively implement solutions from data-driven insights and 
+										make decisions based on fundamental design principles. 
+									<br>
+									<br> Working to impact users and improve the day-to-day with software, as well as [ one day hopefully ] develop a change in the world.<br>
 
-    <!-- End Right Column -->
-    </div>
-    
-  <!-- End Grid -->
-  </div>
-  
-  <!-- End Page Container -->
-</div>
-</body>
+									<br>
+										<a target="_blank" href="files/resumev5.pdf">
+						                  <!-- <img id="resume" src="style/images/vresume_gradient.png"> -->
+						                  Here's a copy of my resume.
+						                </a>
+						            <br>
+								</p>
+							</div>
+
+							<div class="artifact" id="contact" style="display:none;">
+								<p>
+									<h3 class="title">>> contact</h3>
+									<br> I love interacting with people. <br>
+									<br> If you have questions, comments, or anything really, feel free to reach out! 
+									<br>
+										[ see below for details 
+										<font size="3 pt"> ✉</font>
+										<font size="3 pt">☏</font>
+										<font size="3 pt"> ☞</font> ]
+									<br>
+									<br> Thanks for stopping by.
+									
+								</p>
+							</div>
+
+							<div class="artifact" id="other" style="display:none;">
+								<p>
+									<h3 class="title">>> other</h3>
+									<br> #WIP
+								</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<footer id="footer" class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9 col-md-offset-3">
+						<div class="footer-inner">
+							<div class="row">
+								<div class="col-sm-6">
+									<h2 class="title">About Me</h2>
+									<p>
+										Engineering student from Toronto,<br>
+										I like working with information, backend architectures, and systems design.
+									</p>
+								</div>
+								<div class="col-sm-6">
+									<h2 class="title">Contact Me</h2>
+									<ul>
+										<li>
+											Phone: +650 287 5121
+										</li>
+										<li>
+											Email: vschittur@gmail.com
+										</li>
+										<li>
+											Locations: SF, Dallas, Toronto
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="js/script.js"></script>
+
+	</body>
 </html>
