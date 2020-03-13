@@ -14,17 +14,19 @@
 
 		// Toggle pages
 		$('li.menu-item').on('click', function (e) {
-		    var previousItem = $('.menu-list > li.active')
-		    previousItem.removeClass('active');
-		    $(this).addClass('active');
+			if (!$(this).hasClass('active')) {
+				var previousItem = $('.menu-list > li.active')
+			    previousItem.removeClass('active');
+			    $(this).addClass('active');
 
-		    var previousPage = previousItem.children('a').attr('target'),
-		    	nextPage = $(this).children('a').attr('target');
-		    $('#'+previousPage).hide(500);
-		    $('#'+nextPage).show(500);
+			    var previousPage = previousItem.children('a').attr('target'),
+			    	nextPage = $(this).children('a').attr('target');
+			    $('#'+previousPage).hide(500);
+			    $('#'+nextPage).show(500);
 
-		    $header.removeClass('active');
-			$hideMenu.removeClass('active');
+			    $header.removeClass('active');
+				$hideMenu.removeClass('active');
+			}
 		});
 
 		var $header = $('.header');
