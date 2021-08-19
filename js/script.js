@@ -29,6 +29,25 @@
 			}
 		});
 
+		// Next button
+		$('#next').on('click', function (n) {
+			var prevItem = $('.menu-list > li.active'),
+				nextItem = prevItem.next()
+
+			if (!nextItem.length) {
+				nextItem = $('.menu-list > li:first-child')
+			}
+
+		    prevItem.removeClass('active');
+		    nextItem.addClass('active');
+
+		    var prevPage = prevItem.children('a').attr('target'),
+		   		nextPage = nextItem.children('a').attr('target');
+
+		    $('#'+prevPage).hide(500);
+		    $('#'+nextPage).show(500);
+		});
+
 		var $header = $('.header');
 
 		// Mobile Menu
